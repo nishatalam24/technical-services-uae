@@ -21,8 +21,18 @@ export default function Navbar() {
   }`}
 >
 
-      <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-4 flex justify-between items-center">
-        <h1 className={`text-xl font-bold ${scrolled || isOpen ? 'text-gray-800' : 'text-white'}`}>Sultan Yahya</h1>
+     <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-4 flex justify-between items-center">
+  <a href="/" className="flex items-center space-x-2">
+    <img
+      src="https://sultanyahyatechnicalservices.com/wp-content/uploads/2025/01/LOGo-285x300.png"
+      alt="Sultan Yahya Logo"
+      className="h-10 w-auto object-contain"
+    />
+    <span className={`text-xl font-bold ${scrolled || isOpen ? 'text-gray-800' : 'text-white'}`}>
+      Sultan Yahya
+    </span>
+  </a>
+
 
         {/* Desktop Nav */}
         <nav className={`hidden md:flex space-x-4 sm:space-x-6 text-sm sm:text-base ${scrolled ? 'text-gray-800' : 'text-white'}`}>
