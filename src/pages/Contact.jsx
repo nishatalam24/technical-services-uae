@@ -3,11 +3,12 @@ import Herosection from '../components/Herosection';
 import helmetImage from '../assets/helmet.png';
 
 const ContactSection = () => {
+  const text=" "
   return (
     <>
 
-    <section>
-        <Herosection image={helmetImage}/>
+    <section className='h-[]'>
+        <Herosection text={text} image={helmetImage}/>
     </section>
 
   
