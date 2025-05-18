@@ -755,7 +755,8 @@ useEffect(() => {
 
       {/* OUR PEOPLE SECTION */}
  <section 
-//  className="py-16 px-6 sm:px-10 md:px-20"
+//  className="py-16 sm:px-10 md:px-20"
+className="px-6 "
 > 
   <h2 className=" text-3xl sm:text-4xl font-semibold text-center text-red-600  ">
     Our People
