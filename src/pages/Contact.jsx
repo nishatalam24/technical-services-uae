@@ -13,9 +13,9 @@ const ContactSection = () => {
   
 
 
-        <section className="px-6 py-20 md:px-20 bg-white">
+        {/* <section className="px-6 py-20 md:px-20 bg-white">
       <div className="grid grid-cols-1 md:grid-cols-2 gap-10 items-start">
-        {/* Contact Details */}
+
         <div>
           <h2 className="text-3xl sm:text-4xl font-semibold text-red-600 mb-6 border-b pb-2 border-red-500 inline-block">
             OUR LOCATIONS
@@ -33,7 +33,7 @@ const ContactSection = () => {
           </div>
         </div>
 
-        {/* Google Map */}
+
         <div>
           <iframe
             title="Google Map Sydney"
@@ -47,7 +47,51 @@ const ContactSection = () => {
           ></iframe>
         </div>
       </div>
-    </section>
+    </section> */}
+    <section className="px-6 py-20 md:px-20 bg-white">
+  <div className="grid grid-cols-1 md:grid-cols-2 gap-10 items-start">
+    
+    {/* Contact Details */}
+    <div>
+      <h2 className="text-3xl sm:text-4xl font-semibold text-red-600 mb-6 border-b pb-2 border-red-500 inline-block">
+        OUR LOCATIONS
+      </h2>
+
+      {/* Dubai Office */}
+      <div className="mt-10">
+        <h3 className="text-2xl font-semibold text-red-500 mb-2">Dubai Office</h3>
+        <p className="text-lg font-medium text-black mb-1">
+          Al Nahda Street, Al Sheikha Mehra Building,<br />
+          Al Qusais 2, Dubai, United Arab Emirates
+        </p>
+        <p className="mb-6">T: +971 52 839 6200, 050 613 5170</p>
+      </div>
+
+
+      {/* Email */}
+      <div className="mt-6">
+        <p className="text-gray-700">
+          Email: <a href="mailto:syahyatechnicalservices@gmail.com" className="text-blue-600 underline">syahyatechnicalservices@gmail.com</a>
+        </p>
+      </div>
+    </div>
+
+    {/* Google Map (Dubai Office as sample) */}
+    <div>
+      <iframe
+        title="Google Map - Dubai Office"
+        src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3607.7541676598095!2d55.36659887538564!3d25.284265927605107!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3e5f5cc37d7a71cb%3A0xa70c2c8f65e14445!2sAl%20Qusais%20Industrial%20Area%204%20-%20Dubai!5e0!3m2!1sen!2sae!4v1715786901234!5m2!1sen!2sae"
+        width="100%"
+        height="450"
+        className="rounded-md border"
+        allowFullScreen=""
+        loading="lazy"
+        referrerPolicy="no-referrer-when-downgrade"
+      ></iframe>
+    </div>
+  </div>
+</section>
+
 {/*  
     <section className="bg-white py-20 px-6 sm:px-10 md:px-20">
       <h2 className="text-3xl sm:text-4xl font-semibold text-red-600 mb-10 border-b border-red-500 pb-4">

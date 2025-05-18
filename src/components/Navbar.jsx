@@ -28,19 +28,18 @@ export default function Navbar() {
       alt="Sultan Yahya Logo"
       className="h-10 w-auto object-contain"
     />
-    <span className={`text-xl font-bold ${scrolled || isOpen ? 'text-gray-800' : 'text-white'}`}>
+    {/* <span className={`text-xl font-bold ${scrolled || isOpen ? 'text-gray-800' : 'text-white'}`}>
       Sultan Yahya
-    </span>
+    </span> */}
   </a>
 
 
         {/* Desktop Nav */}
         <nav className={`hidden md:flex space-x-4 sm:space-x-6 text-sm sm:text-base ${scrolled ? 'text-gray-800' : 'text-white'}`}>
-          <a href="/" className="hover:text-blue-600">Home</a>
-          {/* <a href="/about" className="hover:text-blue-600">About</a> */}
-          <a href="/services" className="hover:text-blue-600">Services</a>
-          <a href="/projects" className="hover:text-blue-600">Projects</a>
-          <a href="/contact" className="hover:text-blue-600">Contact</a>
+       <a href="/" className="hover:text-red-600 transition-colors">Home</a>
+  <a href="/services" className="hover:text-red-600 transition-colors">Services</a>
+  <a href="/projects" className="hover:text-red-600 transition-colors">Projects</a>
+  <a href="/contact" className="hover:text-red-600 transition-colors">Contact</a>
         </nav>
 
         {/* Mobile Hamburger */}
@@ -52,20 +51,23 @@ export default function Navbar() {
       </div>
 
       {/* Mobile Menu with Smooth Transition */}
-     <div
-  className={`md:hidden px-6 overflow-hidden transition-all duration-500 ease-in-out transform origin-top ${
-    isOpen ? 'max-h-screen opacity-100 bg-white/90 backdrop-blur-md text-gray-800 py-6' : 'max-h-0 opacity-0'
+<div
+  className={`md:hidden z-50 w-full transition-all duration-500 ease-in-out transform origin-top ${
+    isOpen
+      ? 'max-h-screen opacity-[1] py-6 backdrop-blur-md bg-white/100'
+      : 'max-h-0 opacity-0'
   }`}
 >
+  <div className="flex flex-col items-start space-y-6 px-6 py-6">
+    <a href="/" className="text-lg hover:text-red-600 transition-colors">Home</a>
+  <a href="/services" className="text-lg hover:text-red-600 transition-colors">Services</a>
+  <a href="/projects" className="text-lg hover:text-red-600 transition-colors">Projects</a>
+  <a href="/contact" className="text-lg hover:text-red-600 transition-colors">Contact</a>
+  </div>
+</div>
 
-        <div className="space-y-6">
-          <a href="/" className="block hover:text-blue-600 text-lg">Home</a>
-          <a href="/about" className="block hover:text-blue-600 text-lg">About</a>
-          <a href="/services" className="block hover:text-blue-600 text-lg">Services</a>
-          <a href="/projects" className="block hover:text-blue-600 text-lg">Projects</a>
-          <a href="/contact" className="block hover:text-blue-600 text-lg">Contact</a>
-        </div>
-      </div>
+
+
     </header>
   );
 }

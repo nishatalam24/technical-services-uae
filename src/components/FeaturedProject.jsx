@@ -3,34 +3,61 @@ import { motion } from 'framer-motion';
 
 const projects = [
   {
-    title: 'Atura Hotel – Sydney',
-    description: 'Luxury boutique hotel with poolside amenities.',
-    image: 'https://images.unsplash.com/photo-1506748686214-e9df14d4d9d0?ixlib=rb-4.0.3&auto=format&fit=crop&w=1350&q=80'
+    // title: 'Atura Hotel – Sydney',
+    // description: 'Luxury boutique hotel with poolside amenities.',
+    image: 'https://sultanyahyatechnicalservices.com/wp-content/uploads/2025/01/WhatsApp-Image-2025-01-16-at-9.09.02-PM-1.jpeg'
   },
   {
-    title: 'Scape Victoria Street – Melbourne',
-    description: 'Student accommodation and commercial spaces.',
-    image: 'https://m.thepeninsulaqatar.com/get/maximage/20180620_1529478077-200181.jpeg?1635250003'
+    // title: 'Scape Victoria Street – Melbourne',
+    // description: 'Student accommodation and commercial spaces.',
+    image: 'https://sultanyahyatechnicalservices.com/wp-content/uploads/2025/01/a-photo-of-a-false-ceiling-being-install_jZhadnsjR5W80vrGXnznyQ_EuMq2YSNT0CUUy2GnVwocg-768x768.jpeg'
+  },
+
+  {
+    // title: 'One Chalmers – Sydney',
+    // description: 'Modern workspace with premium lounge interiors.',
+    image: 'https://sultanyahyatechnicalservices.com/wp-content/uploads/2025/01/WhatsApp-Image-2025-01-16-at-9.09.02-PM-768x432.jpeg'
   },
   {
-    title: 'One Chalmers – Sydney',
-    description: 'Modern workspace with premium lounge interiors.',
-    image: 'https://m.thepeninsulaqatar.com/get/maximage/20180620_1529478077-200181.jpeg?1635250003'
+    // title: 'Mayflower – Melbourne',
+    // description: 'Senior living redevelopment with dementia care.',
+    image: 'https://sultanyahyatechnicalservices.com/wp-content/uploads/2025/01/WhatsApp-Image-2025-01-16-at-9.09.04-PM-768x432.jpeg'
   },
   {
-    title: 'Mayflower – Melbourne',
-    description: 'Senior living redevelopment with dementia care.',
-    image: 'https://m.thepeninsulaqatar.com/get/maximage/20180620_1529478077-200181.jpeg?1635250003'
+    // title: 'Scape Kensington – Sydney',
+    // description: 'Vertical student housing tower.',
+    image: 'https://sultanyahyatechnicalservices.com/wp-content/uploads/2025/03/a-photo-of-a-worker-preparing-to-install_GP0UohHRRKq18RD0yVlhnA_NzVkDf4XSh-8hYXwkT0T1Q-768x768.jpeg'
   },
   {
-    title: 'Scape Kensington – Sydney',
-    description: 'Vertical student housing tower.',
-    image: 'https://m.thepeninsulaqatar.com/get/maximage/20180620_1529478077-200181.jpeg?1635250003'
+    // title: 'Scape Kensington – Sydney',
+    // description: 'Vertical student housing tower.',
+    image: 'https://sultanyahyatechnicalservices.com/wp-content/uploads/2025/01/WhatsApp-Image-2025-01-16-at-9.09.04-PM-1-768x576.jpeg'
   },
   {
-    title: 'Scape Kensington – Sydney',
-    description: 'Vertical student housing tower.',
-    image: 'https://m.thepeninsulaqatar.com/get/maximage/20180620_1529478077-200181.jpeg?1635250003'
+    // title: 'Scape Kensington – Sydney',
+    // description: 'Vertical student housing tower.',
+    image: 'https://sultanyahyatechnicalservices.com/wp-content/uploads/2025/03/a-photo-of-light-plumbing-work-and-pump-_TboxP8yyTGa2KbvwUkQNPg_04cTEIKoTBayY-RUSHntLw-768x768.jpeg'
+  },
+  {
+    // title: 'Scape Kensington – Sydney',
+    // description: 'Vertical student housing tower.',
+    image: 'https://sultanyahyatechnicalservices.com/wp-content/uploads/2025/01/WhatsApp-Image-2025-01-16-at-9.09.11-PM-576x1024.jpeg'
+  },
+  {
+
+    // title: 'Scape Kensington – Sydney',
+    // description: 'Vertical student housing tower.',
+    image: 'https://sultanyahyatechnicalservices.com/wp-content/uploads/2025/01/WhatsApp-Image-2025-01-16-at-9.09.12-PM-576x1024.jpeg'
+  },
+  {
+    // title: 'Scape Kensington – Sydney',
+    // description: 'Vertical student housing tower.',
+    image: 'https://sultanyahyatechnicalservices.com/wp-content/uploads/2025/01/WhatsApp-Image-2025-01-16-at-9.09.41-PM-576x1024.jpeg'
+  },
+    {
+    // title: 'Scape Victoria Street – Melbourne',
+    // description: 'Student accommodation and commercial spaces.',
+    image: 'https://sultanyahyatechnicalservices.com/wp-content/uploads/2025/01/WhatsApp-Image-2025-01-16-at-9.09.01-PM-768x432.jpeg'
   },
 ];
 
@@ -74,12 +101,12 @@ const FeaturedProjects = () => {
   }, []);
 
   return (
-    <section className="bg-white py-20 px-6 sm:px-10 md:px-20">
+    <section className="bg-white py-[40px] lg:py-[80px]  px-6 sm:px-10 md:px-20">
       <div className="flex items-center justify-between mb-8">
         <h2 className="text-3xl sm:text-4xl font-semibold text-red-600">
           Featured Projects
         </h2>
-        <a href="#" className="underline text-gray-800 hover:text-red-600">
+        <a href="/projects" className="underline text-gray-800 hover:text-red-600">
           View All Projects
         </a>
       </div>

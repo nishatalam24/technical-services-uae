@@ -184,7 +184,7 @@ const ServiceCatalog = ({ limit }) => {
   }, [limitedServices]);
 
   return (
-    <section className="py-16 px-6 md:px-20 ">
+    <section className=" px-6 md:px-20 py-[40px] lg:py-16">
       <h2 className="text-3xl font-semibold text-center text-red-600 mb-12">Our Services</h2>
       <div className="space-y-20">
         {limitedServices.map((service, i) => (

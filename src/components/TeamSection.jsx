@@ -85,7 +85,7 @@ const people = [
 
 export default function TeamSection() {
   return (
-    <section className="bg-white w-[1000px]  py-16 px-6 sm:px-10 md:px-20 w-[90vw]">
+    <section className="bg-white w-[1000px]  py-[50px] lg:py-[70px] px-6 sm:px-10 md:px-20 w-[90vw]">
       {/* <h2 className="text-red-600 text-3xl sm:text-4xl font-semibold text-center mb-12">
         Our People
       </h2> */}

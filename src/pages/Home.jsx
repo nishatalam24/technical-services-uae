@@ -10,6 +10,7 @@ import ClientTestimonials from "../components/ClientTestimonials";
 import CountUp from 'react-countup';
 import { useInView } from 'react-intersection-observer';
 import QualityPolicySection from "../components/QualityPolicySection";
+import FeaturedProjects from "../components/FeaturedProject";
 // import StarRating from "../components/StarRating";
 // import ImageShowcase from "../components/ImageShowcase";
 // import { Link } from 'react-router-dom'; // or 'next/link' if using Next.js
@@ -679,7 +680,7 @@ useEffect(() => {
 
 
       {/* ABOUT US SECTION */}
-      <section className="bg-white py-24 px-6 sm:px-10 md:px-20">
+      {/* <section className="bg-white py-24 px-6 sm:px-10 md:px-20">
         <div className="max-w-7xl mx-auto flex flex-col md:flex-row items-start   gap-10">
 
           <div className="w-full md:w-1/3">
@@ -701,9 +702,38 @@ useEffect(() => {
             </p>
           </div>
         </div>
-      </section>
+      </section> */}
+ <section className="bg-white  px-6 sm:px-10 md:px-20">
+  <div className="max-w-7xl mx-auto grid grid-cols-1 md:grid-cols-2 gap-10 items-start">
+    
+    {/* Text Side — appears first on mobile */}
+    <div className="w-full order-1 md:order-none">
+      <h2 className="text-3xl md:text-4xl text-center text-red-600 font-bold tracking-wide mb-8">
+        About Us
+      </h2>
+      <p className="text-[20px] leading-relaxed text-gray-900 mb-6">
+        Sultan Yahya Technical Services is a multi-award-winning UAE-based company offering integrated solutions across construction, technical maintenance, and building services. With decades of industry experience, we serve clients across commercial, industrial, residential, and institutional sectors — delivering results defined by quality, reliability, and professionalism.
+      </p>
+      <p className="italic text-[20px] text-gray-800">
+        “We have built our reputation as a trusted service provider that places client satisfaction and technical excellence at the core of every project. Our team is driven by precision, commitment, and a passion for delivering beyond expectations.”
+      </p>
+    </div>
 
- <section className="relative">
+    {/* Image Side — comes second on mobile, first on desktop */}
+    <div className="w-full order-2 md:order-1">
+      <img
+        src="https://sultanyahyatechnicalservices.com/wp-content/uploads/2025/01/WhatsApp-Image-2025-01-16-at-9.09.10-PM.jpeg"
+        alt="About Sultan Yahya"
+        className="w-full h-full object-cover rounded-lg shadow-md"
+      />
+    </div>
+
+  </div>
+</section>
+
+
+
+ <section className="relative py-16">
       {/* Our Services */}
       <ServiceCatalog limit={3} />
 
@@ -724,9 +754,10 @@ useEffect(() => {
     </section>
 
       {/* OUR PEOPLE SECTION */}
-    <section className="
- py-16 px-6 sm:px-10 md:px-20">
-  <h2 className=" text-3xl sm:text-4xl font-semibold text-center text-red-600  mb-10">
+ <section 
+//  className="py-16 px-6 sm:px-10 md:px-20"
+> 
+  <h2 className=" text-3xl sm:text-4xl font-semibold text-center text-red-600  ">
     Our People
   </h2>
   {/* <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-8 max-w-7xl mx-auto">
@@ -766,16 +797,16 @@ useEffect(() => {
         }
       `}</style> */}
 
-      <section className="bg-white py-20 px-6 sm:px-10 md:px-20">
-        <div className="flex items-center justify-between mb-8">
+      {/* <section className="bg-white py-20 px-6 sm:px-10 md:px-20"> */}
+        {/* <div className="flex items-center justify-between mb-8">
           <h2 className="text-3xl sm:text-4xl font-semibold text-red-600">
             Featured Projects
           </h2>
           <a href="#" className="underline text-gray-800 hover:text-red-600">
             View All Projects
           </a>
-        </div>
-        <div className="relative">
+        </div> */}
+        {/* <div className="relative">
           <div className="scrollable-projects flex gap-6 overflow-x-auto scrollbar-hide snap-x snap-mandatory scroll-smooth">
             {featuredProjects.map((project, i) => (
               <div
@@ -818,8 +849,9 @@ useEffect(() => {
               →
             </button>
           </div>
-        </div>
-      </section>
+        </div> */}
+        <FeaturedProjects/>
+      {/* </section> */}
 {/* <section className="">
 
 

@@ -1,7 +1,7 @@
 import React from 'react'
 import { useState, useEffect } from "react";
 import { AnimatePresence, motion } from "framer-motion";
-const Herosection = ({ image }) => {
+const Herosection = ({ image ,text}) => {
   return (
     <section className="relative h-screen overflow-hidden">
       {/* Background Image with Overlay */}
@@ -26,16 +26,19 @@ const Herosection = ({ image }) => {
             animate={{ opacity: 1, y: 0 }}
             transition={{ delay: 0.2, duration: 0.8 }}
           >
-            Sultan Yahya is a UAE-based construction company with decades of experience.
+           {
+            text?<>{text}</>:
+           <>Sultan Yahya is a UAE-based construction company with decades of experience.</> 
+           }
           </motion.h1>
-          <motion.p
+          {/* <motion.p
             className="text-lg sm:text-xl"
             initial={{ opacity: 0, y: 10 }}
             animate={{ opacity: 1, y: 0 }}
             transition={{ delay: 0.4, duration: 0.8 }}
           >
             We are known for our premium quality builds and client-focused project delivery.
-          </motion.p>
+          </motion.p> */}
         </motion.div>
       </div>
     </section>
